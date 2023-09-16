@@ -31,7 +31,7 @@ function FeaturedMovie() {
 
 
     return (
-        <div className='bg-white px-[200px] flex flex-col py-[70px]'>
+        <div className='bg-white px-[100px] flex flex-col py-[70px]'>
             <div className='flex justify-between mb-11'>
                 <h2 className='text-black text-4xl font-bold'>Featured Movie</h2>
                 <div className='flex items-center gap-2'>

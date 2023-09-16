@@ -7,7 +7,7 @@ import play from '../images/Play.svg'
 
 function Header() {
   return (
-    <header className='bg-headerBg lg:h-[600px] px-[200px]'>
+    <header className='bg-headerBg lg:h-[600px] px-[100px]'>
         <nav className='flex justify-between py-5 mb-[100px]'>
           <img src={Logo} alt='movieBox'/>
           <div className='border border-white w-[525px] rounded-md flex justify-between items-center px-[10px] py-[6px]'>
