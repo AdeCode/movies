@@ -66,9 +66,11 @@ function MovieDetails() {
             </div>
             <div className='grid grid-cols-4'>
               <div className='col-span-3'>
-                <div className='flex mb-[25px]'>
-                  <h2 data-testid='movie-title' className='text-[#404040] text-[23px] font-medium'>{details.original_title} • 2022 • PG-13 • </h2>
-                  <span className='text-[#404040] text-[23px] font-medium mr-[17px]' data-testid='movie-title'>{convertStoMs(details.runtime)}</span>
+                <div className='flex items-center mb-[25px]'>
+                  <h2 data-testid='movie-title' className='text-[#404040] text-[23px] font-medium'>{details.original_title} • </h2>
+                  <span className='text-[#404040] text-[23px] font-medium' data-testid='movie-release-date'>{details?.release_date?.split('-')[0]} • </span>
+                  <span className='text-[#404040] text-[23px] font-medium'> PG-13 • </span>
+                  <span className='text-[#404040] text-[23px] font-medium mr-[17px]' data-testid='movie-runtime'>{convertStoMs(details.runtime)}</span>
                   <div className='text-[#B91C1C] flex items-center gap-3'>
                     {
                       details?.genres?.map(({name, id}) => (

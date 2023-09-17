@@ -72,7 +72,7 @@ function MovieCard({ title, imagePath, release_date, id, movieGenres }) {
           </svg>
         </Span>
       </div>
-      <h3 data-testid='movie-release-date' className='text-[#9CA3AF] font-bold text-xs'>USA, {date.toUTCString(release_date)}</h3>
+      <h3 data-testid='movie-release-date' className='text-[#9CA3AF] font-bold text-xs'>USA, {moment(release_date).utc().format('YYYY-MM-DD')}</h3>
       <h3 data-testid='movie-title' className='text-[#111827] font-bold text-lg'>{title}</h3>
       <div className='flex gap-[34px] text-[#111827]'>
         <div className='flex gap-[10px]'>
